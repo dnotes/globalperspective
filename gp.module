@@ -1,0 +1,22 @@
+<?php
+
+/**
+ * @file
+ *
+ */
+
+function gp_preprocess_node(&$vars) {
+  $languages = language_list();
+  if (!empty($languages) && $languages{$vars['node']->language}->direction) {
+    $vars['classes_array'][] = 'node-rtl';
+  }
+}
+
+function gp_preprocess_page(&$vars) {
+  if (!empty($vars['node']) && is_object($vars['node'])) {
+    $languages = language_list();
+    if (!empty($languages) && $languages{$vars['node']->language}->direction) {
+      $vars['classes_array'][] = 'page-node-rtl';
+    }
+  }
+}

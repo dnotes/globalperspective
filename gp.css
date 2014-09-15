@@ -1,0 +1,24 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Sep 15, 2014, 12:52:10 PM
+    Author     : david
+*/
+
+.node-rtl {
+  text-align:right;
+}
+
+.incubator-images-right .node-teaser.node-rtl .field-name-field-gallery-images,
+.incubator-images-right .node-teaser.node-rtl .field-name-field-media,
+.incubator-images-right .node-rtl .field-name-field-main-image {float:left;margin-right:9px;}
+.incubator-images-left .node-teaser.node-rtl .field-name-field-gallery-images,
+.incubator-images-left .node-teaser.node-rtl .field-name-field-media,
+.incubator-images-left .node-rtl .field-name-field-main-image {float:right;margin-left:9px;}
+
+.page-node-rtl h1#page-title {
+    text-align: right;
+}

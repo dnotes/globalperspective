@@ -1,0 +1,5 @@
+name = "Global Perspective"
+description = "Custom functionality for Global Perspective site"
+core = 7.x
+
+stylesheets[all][] = gp.css
