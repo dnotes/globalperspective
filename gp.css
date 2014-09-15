@@ -22,3 +22,29 @@ and open the template in the editor.
 .page-node-rtl h1#page-title {
     text-align: right;
 }
+
+@media all and (max-width: 739px) {
+  .responsive-layout-mobile .block-commerce-cart {
+      box-sizing: border-box;
+      padding: 8px !important;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 40px;
+      font-size: 14px;
+      line-height: 14px;
+  }
+  .responsive-layout-mobile .block-commerce-cart h2.block-title { display:none; }
+  .responsive-layout-mobile .block-commerce-cart .view-content { display:none; }
+  .responsive-layout-mobile .block-commerce-cart .line-item-total { float: left; margin-left: 8px; }
+  .responsive-layout-mobile .block-commerce-cart ul.inline,
+  .responsive-layout-mobile .block-commerce-cart ul.inline li { margin: 0; }
+  html body.responsive-layout-mobile.html .gp-cart {
+      margin-top: 40px !important;
+  }
+  .branding-data .logo-img img {
+    max-width: 100%;
+    width: 100%;
+  }
+}

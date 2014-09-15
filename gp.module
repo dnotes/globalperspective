@@ -19,4 +19,7 @@ function gp_preprocess_page(&$vars) {
       $vars['classes_array'][] = 'page-node-rtl';
     }
   }
+  if (!empty($vars['page']['content']['content']['sidebar_second']['commerce_cart_cart'])) {
+    $vars['classes_array'][] = 'gp-cart';
+  }
 }
