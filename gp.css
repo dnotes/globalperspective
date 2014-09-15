@@ -35,7 +35,7 @@ and open the template in the editor.
       font-size: 14px;
       line-height: 14px;
   }
-  .responsive-layout-mobile .block-commerce-cart h2.block-title { display:none; }
+  .responsive-layout-mobile .block-commerce-cart h2.block-title { display:none !important; }
   .responsive-layout-mobile .block-commerce-cart .view-content { display:none; }
   .responsive-layout-mobile .block-commerce-cart .line-item-total { float: left; margin-left: 8px; }
   .responsive-layout-mobile .block-commerce-cart ul.inline,
