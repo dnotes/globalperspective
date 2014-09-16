@@ -28,17 +28,39 @@ and open the template in the editor.
   unicode-bidi: bidi-override;
 }
 
+.view-storefront h3 {
+  clear: both;
+  padding: 1em 2em;
+  border-style: solid none;
+  border-width: 2px 0;
+}
+form.commerce-add-to-cart .form-submit {
+  height: 34px;
+  width: 40px;
+  overflow: hidden;
+  text-indent: -999px;
+  background-image: url("cart-add.png");
+  background-color: rgba(255,255,255,126) !important;
+}
+
+sup {
+  position:relative;
+  bottom: .3em;
+  font-size: .9em;
+}
+
+
 @media all and (max-width: 739px) {
   .responsive-layout-mobile .block-commerce-cart {
-      box-sizing: border-box;
-      padding: 8px !important;
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 40px;
-      font-size: 14px;
-      line-height: 14px;
+    box-sizing: border-box;
+    padding: 8px !important;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    font-size: 14px;
+    line-height: 14px;
   }
   .responsive-layout-mobile .block-commerce-cart h2.block-title { display:none !important; }
   .responsive-layout-mobile .block-commerce-cart .view-content { display:none; }
@@ -52,4 +74,71 @@ and open the template in the editor.
     max-width: 100%;
     width: 100%;
   }
+  .view-storefront h3 {
+    margin-bottom: 5px !important;
+  }
+  .view-storefront .views-row .main-image {
+    width: 48px;
+    height: 48px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .view-storefront .views-row .title {
+    display: inline-block;
+    max-width: 70%;
+    vertical-align: middle;
+    padding: 0 5px;
+    box-sizing: border-box;
+    font-size: 120%;
+  }
+  .view-storefront .views-row .node {
+    float: left;
+    width: 75%;
+    padding-right: 5%;
+  }
+  form.commerce-add-to-cart .form-submit {
+    width: 32px;
+    height: 27px;
+    background-size: contain;
+  }
+}
+
+@media all and (min-width:740px) {
+  .view-storefront .views-row {
+    background-color: #f2f2f2;
+    border-bottom-style: none;
+    border-bottom-width: 0;
+    box-sizing: border-box;
+    float: left;
+    height: 260px;
+    margin: 0.5em;
+    max-width: 140px;
+    padding: 10px 0 20px;
+    text-align: center;
+    width: 140px;
+    position: relative;
+  }
+  .view-storefront span.title {
+    padding: 5px 10px;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .view-storefront form.commerce-add-to-cart {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+  }
+  .view-storefront .views-field-commerce-price {
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+  }
+  
+  form.commerce-add-to-cart .form-submit {
+    opacity: 0.8;
+    border-radius: 8px !important;
+  }
+  form.commerce-add-to-cart input[type=submit]:hover { opacity: 1; }
 }
