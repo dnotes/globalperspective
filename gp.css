@@ -8,19 +8,24 @@ and open the template in the editor.
     Author     : david
 */
 
+.language-Persian,
 .node-rtl {
-  text-align:right;
+  direction: rtl;
+  unicode-bidi: bidi-override;
 }
 
 .incubator-images-right .node-teaser.node-rtl .field-name-field-gallery-images,
 .incubator-images-right .node-teaser.node-rtl .field-name-field-media,
+.incubator-images-right .language-Persian .field-name-field-main-image,
 .incubator-images-right .node-rtl .field-name-field-main-image {float:left;margin-right:9px;}
 .incubator-images-left .node-teaser.node-rtl .field-name-field-gallery-images,
 .incubator-images-left .node-teaser.node-rtl .field-name-field-media,
+.incubator-images-left .language-Persian .field-name-field-main-image,
 .incubator-images-left .node-rtl .field-name-field-main-image {float:right;margin-left:9px;}
 
 .page-node-rtl h1#page-title {
-    text-align: right;
+  direction: rtl;
+  unicode-bidi: bidi-override;
 }
 
 @media all and (max-width: 739px) {
