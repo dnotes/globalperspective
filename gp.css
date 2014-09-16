@@ -68,7 +68,7 @@ sup {
   .responsive-layout-mobile .block-commerce-cart ul.inline,
   .responsive-layout-mobile .block-commerce-cart ul.inline li { margin: 0; }
   html body.responsive-layout-mobile.html .gp-cart {
-      margin-top: 40px !important;
+    margin-top: 40px !important;
   }
   .branding-data .logo-img img {
     max-width: 100%;
@@ -111,11 +111,12 @@ sup {
     box-sizing: border-box;
     float: left;
     height: 260px;
-    margin: 0.5em;
-    max-width: 140px;
+    margin: 0.5em 0.6em;
     padding: 10px 0 20px;
     text-align: center;
-    width: 140px;
+    max-width: 149px;
+    min-width: 145px;
+    width: 10.55em;
     position: relative;
   }
   .view-storefront span.title {
