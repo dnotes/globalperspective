@@ -10,6 +10,7 @@ function gp_preprocess_node(&$vars) {
   if (!empty($languages) && $languages{$vars['node']->language}->direction) {
     $vars['classes_array'][] = 'node-rtl';
   }
+  unset($vars['content']['links']['node']['#links']['node-readmore']);
 }
 
 function gp_preprocess_page(&$vars) {
