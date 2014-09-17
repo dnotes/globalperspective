@@ -54,14 +54,11 @@ sup {
 }
 .node .field-name-field-bulk-price {
   position:absolute;
-  top:2.3em;
+  top:0;
   left:30%;
   width:5em;
   height:2.5em;
   font-weight:bold;
-}
-.node.node-teaser .field-name-field-bulk-price {
-  top: 2.3em;
 }
 
 .field-name-field-bulk-price .field-label {
