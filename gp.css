@@ -36,11 +36,19 @@ and open the template in the editor.
 }
 form.commerce-add-to-cart .form-submit {
   height: 34px;
+  padding-left: 45px;
+  background-image: url("cart-add.png");
+  background-position: 5px top;
+  background-repeat: no-repeat;
+  border-radius: 8px !important;
+}
+.view-storefront form.commerce-add-to-cart .form-submit {
   width: 40px;
+  padding-left: 0;
   overflow: hidden;
   text-indent: -999px;
-  background-image: url("cart-add.png");
   background-color: rgba(255,255,255,126) !important;
+  background-position: left top;
 }
 
 sup {
@@ -113,7 +121,7 @@ sup {
     width: 75%;
     padding-right: 5%;
   }
-  form.commerce-add-to-cart .form-submit {
+  .view-storefront form.commerce-add-to-cart .form-submit {
     width: 32px;
     height: 27px;
     background-size: contain;
@@ -154,9 +162,8 @@ sup {
     left: 5px;
   }
   
-  form.commerce-add-to-cart .form-submit {
+  .view-storefront form.commerce-add-to-cart .form-submit {
     opacity: 0.8;
-    border-radius: 8px !important;
   }
-  form.commerce-add-to-cart input[type=submit]:hover { opacity: 1; }
+  .view-storefront form.commerce-add-to-cart input[type=submit]:hover { opacity: 1; }
 }
