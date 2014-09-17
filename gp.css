@@ -169,5 +169,6 @@ sup {
   
   .block-commerce-cart .block-inner {margin: -20px;}
   .block-commerce-cart .view-footer {padding: .5em .5em 0;}
+  .cart-empty-block {padding:20px;}
 
 }
