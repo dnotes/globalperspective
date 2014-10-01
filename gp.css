@@ -74,6 +74,13 @@ sup {
   font-size:85%;
 }
 
+.node-product-display.node-teaser {
+  border-bottom: 1px solid #f2e6c9;
+}
+.node-product-display.node-teaser .form-item {
+  clear:none;
+}
+
 
 @media all and (max-width: 739px) {
   .responsive-layout-mobile .block-commerce-cart {
