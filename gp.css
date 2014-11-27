@@ -179,3 +179,8 @@ sup {
   .cart-empty-block {padding:20px;}
 
 }
+
+.page-checkout .form-type-checkbox label {
+  float: none;
+  width: auto;
+}
