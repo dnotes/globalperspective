@@ -75,7 +75,7 @@ sup {
 }
 
 body.html blockquote { padding-left: 1.9em; padding-right:1.9em; font-style: italic; }
-body.html blockquote p { margin: 0 0 .8em; }
+body.html blockquote p { margin: 0 0 .8em !important; }
 
 .node-product-display.node-teaser {
   border-bottom: 1px solid #f2e6c9;
