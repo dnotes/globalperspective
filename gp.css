@@ -84,6 +84,41 @@ body.html blockquote p { margin: 0 0 .8em !important; }
   clear:none;
 }
 
+.view-storefront .attachment-before { text-align: center; }
+.view-storefront.view-display-id-newbooks {
+  background: #f2f2f2 none repeat scroll 0 0;
+  box-sizing: border-box;
+  display: inline-block;
+  margin: 0 auto;
+  padding: 0;
+  position: relative;
+}
+.view-storefront.view-display-id-newbooks .view-header {
+  background: #902c2e none repeat scroll 0 0;
+  color: white;
+  font-weight: bold;
+  top: -2px;
+  left: -6px;
+  padding: 5px 12px;
+  position: absolute;
+  z-index: 1;
+  transform: rotate(-9deg);
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.25);
+}
+.view-storefront.view-display-id-newbooks .view-header p { 
+  margin-bottom:0; 
+}
+.view-storefront.view-display-id-newbooks .views-row {
+  height: 180px;
+  padding: 0;
+}
+.view-storefront.view-display-id-newbooks .views-field-commerce-price {
+  color: white;
+  font-weight: bold;
+  text-shadow: 2px 0 1px rgba(0, 0, 0, 0.6), 0 2px 1px rgba(0, 0, 0, 0.7), -2px 0 1px rgba(0, 0, 0, 0.4), 0 -2px 1px rgba(0, 0, 0, 0.3);
+}
+
+
 @media all and (max-width: 739px) {
   .responsive-layout-mobile .block-commerce-cart {
     box-sizing: border-box;
