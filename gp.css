@@ -84,6 +84,20 @@ body.html blockquote p { margin: 0 0 .8em !important; }
   clear:none;
 }
 
+.view-storefront form.commerce-add-to-cart,
+.view-storefront.view-display-id-newbooks form.commerce-add-to-cart {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+}
+.view-storefront .views-field-commerce-price,
+.view-storefront.view-display-id-newbooks .views-field-commerce-price {
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+}
+
+
 .view-storefront .attachment-before { text-align: center; }
 .view-storefront.view-display-id-newbooks {
   background: #f2f2f2 none repeat scroll 0 0;
@@ -112,6 +126,7 @@ body.html blockquote p { margin: 0 0 .8em !important; }
 .view-storefront.view-display-id-newbooks .views-row {
   height: 180px;
   padding: 0;
+  width:145px;
 }
 .view-storefront.view-display-id-newbooks .views-field-commerce-price {
   color: white;
@@ -174,8 +189,28 @@ body.html blockquote p { margin: 0 0 .8em !important; }
     height: 27px;
     background-size: contain;
   }
+  .view-storefront form.commerce-add-to-cart,
+  .view-storefront .views-field-commerce-price {
+    position: static;
+  }
+  
   .view-storefront.view-display-id-newbooks {
-    display:none;
+    width:100%;
+    display:block;
+    text-align:center;
+    height:180px;
+  }
+  .view-storefront.view-display-id-newbooks .view-content {
+    height:100%; width:100%; overflow:hidden;
+  }
+  .view-storefront.view-display-id-newbooks .views-row {
+    border-bottom-style:none;
+    display:inline-block;
+    background:transparent;
+    position:relative;
+  }
+  .view-storefront.view-display-id-newbooks .views-row .node {
+    width:100%;
   }
 }
 
@@ -202,16 +237,6 @@ body.html blockquote p { margin: 0 0 .8em !important; }
     box-sizing: border-box;
   }
   
-  .view-storefront form.commerce-add-to-cart {
-    position: absolute;
-    bottom: 5px;
-    right: 5px;
-  }
-  .view-storefront .views-field-commerce-price {
-    position: absolute;
-    bottom: 5px;
-    left: 5px;
-  }
   
   .view-storefront form.commerce-add-to-cart .form-submit {
     opacity: 0.8;
