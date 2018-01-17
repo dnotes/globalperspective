@@ -124,9 +124,7 @@ body.html blockquote p { margin: 0 0 .8em !important; }
   margin-bottom:0; 
 }
 .view-storefront.view-display-id-newbooks .views-row {
-  height: 180px;
   padding: 0;
-  width:145px;
 }
 .view-storefront.view-display-id-newbooks .views-field-commerce-price {
   color: white;
